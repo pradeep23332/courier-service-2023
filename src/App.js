@@ -11,6 +11,14 @@ import PackageStatus from "./routes/DamageDetect/PackageStatus";
 import InquiryStatus from "./routes/DamageDetect/InquiryStatus";
 import AdminHome from "./routes/DamageDetect/AdminHome";
 import PackageDispatch from "./routes/DamageDetect/PackageDispatch";
+import PerformanceTrack from "./routes/DeliveryRoutes/performancetrack";
+import CreateOrder from "./routes/DeliveryRoutes/createOrder";
+import ChurnRank from "./routes/DeliveryRoutes/churnRank";
+import UpdateOrder from "./routes/DeliveryRoutes/updateOrder";
+import MoreInfo from "./routes/DeliveryRoutes/moreInfo";
+import Modal from "./routes/DeliveryRoutes/removePopup";
+import DeliveryRank from "./routes/DeliveryRoutes/deliveryRank";
+
 
 // PAGES
 import Tickets from "./pages/Tickets"
@@ -36,7 +44,14 @@ function App() {
           <Route path="/PackageDispatch" element={<PackageDispatch/>}/>
           <Route path="/tickets" element={<Tickets />} />
           <Route path="/SingleOrder/:id" element={<SingleOrder/>}/>
+           <Route path="PerformanceTrack" element={<PerformanceTrack/>}/>
           <Route path="/SingleOrderUpdate/:id" element={<SingleOrderUpdate/>}/>
+          <Route path="CreateOrder" element={<CreateOrder/>}/>
+          <Route path="ChurnRank" element={<ChurnRank/>}/>
+          <Route path="UpdateOrder/:slug" element={<UpdateOrder/>}/>
+          <Route path="MoreInfo/:slug" element={<MoreInfo/>}/>
+          <Route path="Modal" element={<Modal/>}/>
+          <Route path="DeliveryRank" element={<DeliveryRank/>}/>
         </Routes>
       </BrowserRouter>
 
